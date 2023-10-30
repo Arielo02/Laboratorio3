@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <title>Proyecto: El Señor de los anillos</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="images/logo_pagina.jpg" alt="Logo el señor de los anillos"></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <nav id="menu_bar" class="">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Personajes</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article class="principal">
+                <div>
+                    <img src="images/logo_trnsparente.png" alt="logo_trnsparente">
+                    
+                </div>
+
+            </article>
+            <article>
+                <h1>Galeria de El Señor de los anillos</h1>
+                <a href="images/Comarca.jpg" data-lightbox="galeria"><img src="images/Comarca mini.jpg" alt="Comarca mini"></a>
+                <a href="images/Rivendell.jpg" data-lightbox="galeria"><img src="images/Rivendell mini.jpg" alt="Rivendell mini"></a>
+                <a href="images/La comunidad del anillo.jpg" data-lightbox="galeria"><img src="images/La comunidad del anillo mini.jpg" alt="la comunidad mini"></a>
+                <a href="images/Minas de Moria.jpg" data-lightbox="galeria"><img src="images/Minas de Moria mini.jpg" alt="Moria mini"></a>
+                <a href="images/Bosque Negro.jpg" data-lightbox="galeria"><img src="images/Bosque Negro mini.jpg" alt="Bosque negro mini"></a>
+                <a href="images/Edoras.jpg" data-lightbox="galeria"><img src="images/Edoras mini.jpg" alt="Edoras mini"></a>
+                <a href="images/Abismo de Helm.jpg" data-lightbox="galeria"><img src="images/Abismo de Helm mini.jpg" alt="Helm mini"></a>
+                <a href="images/Minas tirith.jpg" data-lightbox="galeria"><img src="images/Minas tirith mini.jpg" alt="Tirith mini"></a>
+                <a href="images/Mordor.jpg" data-lightbox="galeria"><img src="images/Mordor mini.jpg" alt="Mordor mini"></a>
+                <a href="images/Puertos grises.jpg" data-lightbox="galeria"><img src="images/Puertos grises mini.jpg" alt="puertos mini"></a>
+            </article>
+        </section>
+        <footer>
+            <div class="redes">
+            <i class="fa-brands fa-facebook" style="color: #daa520;"></i>
+            <i class="fa-brands fa-instagram" style="color: #daa520;"></i>
+            <i class="fa-brands fa-whatsapp" style="color: #daa520;"></i>
+            </div>
+            
+            <h4>Warner Bros. Pictures derechos reservados</h4>
+          
+        </footer>
+
+        <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("menu_bar");
+              if (x.className === "") {
+                x.className += " responsive";
+              } else {
+                x.className = "";
+              }
+            }
+        </script>
+        <script src="js/lightbox-plus-jquery.js"></script>
+    </body>
+</html>
