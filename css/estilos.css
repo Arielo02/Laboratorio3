@@ -2,11 +2,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background-color: #000000;
+
 }
 body{
     font-family: candara ;
     color: goldenrod;
+    background-color: black;
 }
 header{
 	padding-top: 2%;
@@ -15,6 +16,9 @@ header{
 	padding-left: 7%;
 	display: flex;
 	justify-content: space-between;
+}
+header img{
+    width: 174px;
 }
 nav ul{
 	margin-top: 3%;
@@ -54,20 +58,11 @@ section{
 	color: goldenrod;
 }
 .principal div img{
+    width: 70%;
+    margin-left: 20%;
+    
 }
-.secundario{
-	margin-top: 5%;
-	display: flex;
-}
-.secundario div{
-	width: 33%;
-	padding: 2%;
-	text-align: center;
-}
-.secundario div a img{
-	width: 100%;
-	margin-bottom: 2rem;
-}
+
 h4{
 	font-size: 1.5rem;
 	text-transform: uppercase;
