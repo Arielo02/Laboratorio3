@@ -126,6 +126,10 @@ section{
 	height: 250px;
 	padding: 10%;
 }
+.galeria a img{
+    width: 149px;
+    height: 149px;
+}
 h1{
     font-size: 1.5em;
 }
