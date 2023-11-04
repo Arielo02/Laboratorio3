@@ -4,24 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="js/jscript.js">
         <title>Proyecto: El Señor de los anillos</title>
     </head>
     <body>
         <header>
-            <div>
-                <a href="index.html"><img src="images/logo_pagina.jpg" alt="Logo el señor de los anillos"></a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-            <nav id="menu_bar" class="">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="">Personajes</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="">Contacto</a></li>
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="#"><img src="/images/ring.jpg" alt="logo anillo"></a></li>
+                    <li class="item"><a href="index.html">Inicio</a></li>
+                    <li class="item has-submenu">
+                        <a tabindex="0">Personajes</a>
+                            <ul class="submenu">
+                                 <li class="subitem"><a href="#">Frodo</a></li>
+                                 <li class="subitem"><a href="#">Gandalf</a></li>
+                            </ul>
+                    </li>
+                    <li class="item"><a href="galeria.html">Galeria</a></li>
+                    <li class="item"><a href="">Contacto</a></li>
+                    <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
                 </ul>
             </nav>
         </header>
