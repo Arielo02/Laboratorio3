@@ -6,8 +6,8 @@
 }
 body{
     color: goldenrod;
-    background-color: black;
-	font-family: 'Libre Baskerville', serif;
+    background-color:black;
+	font-family: 'Marcellus', serif;
 }
 header{
 	padding-top: 2%;
@@ -16,30 +16,29 @@ header{
 	padding-left: 7%;
 	display: flex;
 	justify-content: space-between;
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Cinzel Decorative', serif;
 }
 header img{
     width: 150px;
-
-
 }
 
 nav {
-	background: #222;
+	width: 100%;
+	background:#111;
 	padding: 0 15px;
   }
   a {
-	color: white;
+	color: goldenrod;
 	text-decoration: none;
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
   }
   .menu,
   .submenu {
 	list-style-type: none;
   }
-  .logo {
-	font-size: 20px;
-	padding: 7.5px 10px 7.5px 0;
-  }
+ 
   .item {
 	padding: 10px;
   }
@@ -48,7 +47,7 @@ nav {
   }
   .item:not(.button) a:hover,
   .item a:hover::after {
-	color: #ccc;
+	color:rgb(175, 18, 18);
   }
   /* Mobile menu */
   .menu {
@@ -82,7 +81,7 @@ nav {
   }
   .button.secondary {
 	/* divider between buttons and menu links */
-	border-bottom: 1px #444 solid;
+	border-bottom: 1px #111010 solid;
   }
   /* Submenu up from mobile screens */
   .submenu {
@@ -100,14 +99,14 @@ nav {
 	line-height: 16px;
 	font-weight: 900;
 	content: "\f078";
-	color: white;
+	color:rgb(175, 18, 18);
 	padding-left: 5px;
   }
   .subitem a {
 	padding: 10px 15px;
   }
   .submenu-active {
-	background-color: #111;
+	background-color: black;
 	border-radius: 3px;
   }
   
@@ -156,7 +155,7 @@ nav {
   /* Desktop menu */
   @media all and (min-width: 960px) {
 	.menu {
-	  align-items: flex-start;
+	  align-items: center;
 	  flex-wrap: nowrap;
 	  background: none;
 	}
@@ -177,7 +176,7 @@ nav {
 	  position: absolute;
 	  left: 0;
 	  top: 68px;
-	  background: #111;
+	  background: black;
 	}
 	.toggle {
 	  display: none;
@@ -201,17 +200,25 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+
 }
 .principal div img{
     width: 70%;
-    margin-left: 20%;
+	margin-left: 20%;
     
 }
 h1{
-    text-align: center;
     font-size: 3em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+	font-family: 'Cinzel Decorative', serif;
+}
+
+h2{
+	font-size: 1.5rem;
+}
+h3{
+	font-size: 1.3em;
 }
 h4{
 	font-size: 1rem;
@@ -249,12 +256,13 @@ h4{
 	position: absolute;
 	z-index: -1;
 	inset: 0;
-	background: black;
-	opacity: .8;
+	background:black;
+	opacity: .3;
 }
 .parrafo_centrado{
 	text-align: center;
 	font-size: 1.1em;
+	font-family: 'Cinzel Decorative', serif;
 }
 
 .contenedor1{
@@ -265,6 +273,36 @@ h4{
     width: 50px;
     height: 200px;
     display: flex;
+}
+
+.galeria{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	
+}
+.contenedor_personaje{
+	width: 100%;
+
+}
+.personaje_foto{
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-bottom: 25px;
+}
+.personaje_foto img{
+	height: 550px;
+	width: 100%;
+	
+
+}
+.personaje_info{
+
+	padding: 3%;
 }
 
 input{
@@ -290,18 +328,35 @@ footer{
 	width: 80%;
 	height: 15%;	
 	border: 2px solid ;
+	border-radius: 10px;
 	text-align: center;
 	padding-top: 8px;
 	font-size: 1.5em;
+	background-color: #111;
 }
 .legales{
 	width: 80%;
 	height: 45%;
 	border: 2px solid;
+	border-radius: 10px;
 	padding-top: 50px;
+	background-color: #111;
 }
 
+@media (max-width: 1050px) { 
+	.fondo_parrafo{
+		height: auto;
+		margin-top: 20px;
+		background-color: #111;
+	}
+}
 
+@media(max-width: 720px){
+	.galeria a img{
+		width: 200px;
+		height: 200px;
+	}
+}
 
 @media (max-width: 480px) { 
 header{
@@ -313,32 +368,7 @@ header{
 	top: 0;
 	z-index: 1;
 }
-header div, header a {
-	flex: 1 0 50%;
-}
-header nav {
-	flex-basis: 100%;
-}
-.icon {
-	display: block;
-	padding-right: 0.6rem;
-	text-align: right;
-}
-nav ul {
-	display: none;
-   
-}
-nav.responsive ul {
-	display: block;
-}
-nav.responsive ul li {
-	display: block;
-	text-align: center;
-	padding: 0.5rem;
-}
-nav.responsive ul li a {
-	padding-right: 0;
-}
+
 section{
 	max-width: 480px;
 	width: 100%;
@@ -349,23 +379,23 @@ section{
 .fondo_parrafo{
 	height: auto;
 	margin-top: 20px;
-}
+	background-color: #111;}
 .principal{
 	height: 250px;
 	padding: 10%;
 }
 .galeria a img{
-    width: 149px;
-    height: 149px;
-    margin-left: 7px;
+    width: 141px;
+    height: 141px;
+}
+.personaje_foto img{
+	height: 300px;
 }
 h1{
 
-    font-size: 1.5em;
+    font-size: 2em;
 }
-h2{
-	font-size: 1rem;
-}
+
 h4{
 
 	font-size: 1rem;
