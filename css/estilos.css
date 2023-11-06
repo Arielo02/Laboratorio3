@@ -359,7 +359,7 @@ footer{
 	}
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 576px) { 
 header{
 	align-items: center;
 	justify-content: space-around;
