@@ -215,7 +215,7 @@ h1{
 h2{
 	font-size: 1.5rem;
 }
-h3{
+label, p, h3{
 	font-size: 1.3em;
 }
 h4{
