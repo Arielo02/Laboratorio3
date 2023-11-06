@@ -292,14 +292,25 @@ h4{
 	padding: 3%;
 }
 .formulario{
-	border: 1px solid;
-	border-radius: 10px;
 	text-align: center;
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
 	padding: 20px;
-	background-color: #111;
-
+	background-image: url(../images/lordoftherings.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	background-blend-mode:saturation;
+	isolation: isolate;	
+}
+.formulario::after{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background:black;
+	opacity: .5;
 }
 input{
     margin-top: 7px;
