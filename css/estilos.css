@@ -81,10 +81,7 @@ nav {
   .active .item {
 	display: block;
   }
-  .button.secondary {
-	/* divider between buttons and menu links */
-	border-bottom: 1px #111010 solid;
-  }
+
   /* Submenu up from mobile screens */
   .submenu {
 	display: none;

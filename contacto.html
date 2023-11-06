@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Encode+Sans+Condensed&family=Marcellus&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Encode+Sans+Condensed&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="js/jscript.js">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="index.html"><img src="/images/ring.png" alt="logo anillo"></a></li>
+                    <li class="item"><a href="index.html">Inicio</a></li>
+                    <li class="item has-submenu">
+                        <a tabindex="0">Personajes</a>
+                            <ul class="submenu">
+                                 <li class="subitem"><a href="frodo.html">Frodo</a></li>
+                                 <li class="subitem"><a href="gandalf.html">Gandalf</a></li>
+                                 <li class="subitem"><a href="Aragorn.html">Aragorn</a></li>
+                                 <li class="subitem"><a href="legolas.html">Legolas</a></li>
+                                 <li class="subitem"><a href="Gimli.html">Gimbli</a></li>
+                            </ul>
+                    </li>
+                    <li class="item"><a href="galeria.html">Galeria</a></li>
+                    <li class="item"><a href="contacto.html">Contacto</a></li>
+                    <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article class="contenedor_contacto">
+                
+                <div class="formulario">
+                    <h1>Contacto</h1>
+                    <form action="#" method="GET"></form>
+                        <h3>Apellido y Nombre</h3>
+                        <input type="text" name="nombre" id="nombre">
+                        <h3>Sexo</h3>
+                        <input type="radio" name="sexo" id="femenino" value="m" checked>
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="sexo" id="masculino" value="m">
+                        <label for="masculino">Masculino</label>
+                        <h3>Teléfono</h3>
+                        <input type="tel" id="Teléfono">
+                        <h3>Email</h3>
+                        <input type="email"  id="email">
+                        <h3>Envianos tu comentario:</h3>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" ></textarea><br>
+                        <input type="submit" value="Enviar" id="enviar">
+                    </form>
+                </div>
+
+            </article>
+        </section>
+        <footer>
+            <div class="redes">
+                    <h4>seguinos en:</h4>
+                    <i class="fa-brands fa-facebook" style="color: #daa520;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #daa520;"></i>
+                    <i class="fa-brands fa-x-twitter" style="color: #daa520;"></i>
+            </div>
+            <div class="legales">
+                 <h4>Warner Bros. Pictures derechos reservados</h4><br>
+                 <h4>by Arielo 2023</h4>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("menu_bar");
+              if (x.className === "") {
+                x.className += " responsive";
+              } else {
+                x.className = "";
+              }
+            }
+        </script>
+        <script src="js/jscript.js"></script>
+       
+    </body>
+</html>
